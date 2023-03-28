@@ -1,0 +1,32 @@
+{
+    "name": "craft-cloud/nova-ck-light",
+    "description": "A simple ckeditor and ckfinder nova wysiwyg field",
+    "keywords": [
+        "laravel",
+        "nova",
+        "ckeditor",
+        "ckfinder",
+        "wysiwyg"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CraftCloud\\NovaCkLight\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CraftCloud\\NovaCkLight\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
