@@ -12,4 +12,14 @@ class NovaCkLight extends Field
      * @var string
      */
     public $component = 'nova-ck-light';
+
+    /**
+     * Set the field to only accept images
+     *
+     * @return $this
+     */
+    public function imageOnly()
+    {
+        return $this->withMeta(['imageOnly' => true]);
+    }
 }
