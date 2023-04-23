@@ -18,8 +18,18 @@ class NovaCkLight extends Field
      *
      * @return $this
      */
-    public function imageOnly()
+    public function imageOnly(bool $imageOnly = true)
     {
-        return $this->withMeta(['imageOnly' => true]);
+        return $this->withMeta(['imageOnly' => $imageOnly]);
+    }
+
+    /**
+     * CK toolbar options
+     *
+     * @return $this
+     */
+    public function toolbar(array $toolbar = [])
+    {
+        return $this->withMeta(['toolbar' => $toolbar]);
     }
 }
