@@ -2,7 +2,15 @@
   <PanelItem :index="index" :field="field">
     <template #value>
       <div v-if="field.imageOnly && field.value">
-        <ImageDisplay :src="field.value" :showClearButton="false" />
+        <div class="break-all md:w-3/4 md:py-3 lg:break-words">
+          <span>
+            <img
+              :src="field.value"
+              style="max-width: 128px"
+              class="aspect-square object-scale-down"
+            />
+          </span>
+        </div>
       </div>
 
       <div v-else>

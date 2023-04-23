@@ -22,12 +22,28 @@ composer require craft-cloud/nova-ck-light
 
 ## Usage
 
+Default editor
+
 ```php
 use CraftCloud\NovaCkLight\NovaCkLight;
 
 NovaCkLight::make('MyFieldName'),
 ```
 
+Editor options
+```php
+use CraftCloud\NovaCkLight\NovaCkLight;
+
+NovaCkLight::make('MyFieldName')->toolbar(['heading', '|', 'bold', 'italic', 'link']),
+```
+
+If you require images without an editor
+
+```php
+use CraftCloud\NovaCkLight\NovaCkLight;
+
+NovaCkLight::make('MyFieldName')->imageOnly(),
+```
 ## Testing
 
 ``` bash

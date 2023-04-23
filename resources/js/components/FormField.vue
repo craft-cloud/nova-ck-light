@@ -71,7 +71,7 @@ export default {
       editorConfig: {
         // The configuration of the editor.
         toolbar: {
-          items: [
+          items: this.field.toolbar || [
             "ckfinder",
             "|",
             "heading",
@@ -88,12 +88,10 @@ export default {
             "redo",
           ],
         },
-
         ckfinder: {
           uploadUrl:
             "/ckfinder/connector?command=QuickUpload&type=Files&responseType=json",
           options: {
-            resourceType: "Images",
             connectorPath: "/ckfinder/connector",
           },
         },
