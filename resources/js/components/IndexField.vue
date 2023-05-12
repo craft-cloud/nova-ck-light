@@ -1,6 +1,6 @@
 <template>
   <div v-if="field.imageOnly && field.value">
-    <ImageDisplay :src="field.value" :showClearButton="false" />
+    <img :src="field.value" style="max-width: 32px;" />
   </div>
 
   <div v-else>
